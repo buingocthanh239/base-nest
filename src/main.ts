@@ -24,6 +24,7 @@ async function bootstrap() {
           filename: `logs/combined.log`,
           format: format.combine(format.timestamp(), format.json()),
         }),
+
         // we also want to see logs in our console
         new transports.Console({
           format: format.combine(
